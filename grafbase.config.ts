@@ -19,8 +19,8 @@ export default config({
     rules: [
       {
         types: ["Query"],
-        maxAge: 60,
-        staleWhileRevalidate: 60,
+        maxAge: 120,
+        staleWhileRevalidate: 120,
       },
     ],
   },
