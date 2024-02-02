@@ -15,4 +15,13 @@ export default config({
       rules.public();
     },
   },
+  cache: {
+    rules: [
+      {
+        types: ["Query"],
+        maxAge: 60,
+        staleWhileRevalidate: 60,
+      },
+    ],
+  },
 });
